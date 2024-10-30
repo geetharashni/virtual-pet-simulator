@@ -1,0 +1,86 @@
+/* Body and Container */
+body {
+    font-family: 'serif', 'garamond';
+    background: linear-gradient(135deg, #474747, #020202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(135deg, #b8f6c1, #f2d1b3);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    width: 550px;
+    text-align: center;
+}
+
+h1 {
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+/* Pet Image */
+#pet img {
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+#pet img:hover {
+    transform: scale(1.1);
+}
+
+/* Status Bars */
+.bar-container {
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 2px 5px gray;
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(90deg, #7d5f2aed, #d58e31);
+    width: 50%; /* Will be updated by JS */
+    transition: width 0.5s ease;
+    border-radius: 10px;
+}
+
+/* Styling the headings of the status bars */
+.status p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5d2602;
+    margin: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'serif', garamond;
+}
+
+/* Buttons */
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #f4ad7f;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
